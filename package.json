@@ -1,0 +1,32 @@
+{
+    "name": "hardhat-deploy-verify",
+    "version": "1.0.0",
+    "description": "Hardhat plugin for automatic contracts verification for hardhat-deploy",
+    "author": "TheSnakeWitcher",
+    "license": "MIT",
+    "main": "./src/main.tsx",
+    "keywords": [
+        "web3",
+        "blockchain",
+        "ethereum",
+        "smart-contracts",
+        "deployment",
+        "verify",
+        "verifying",
+        "tool",
+        "hardhat",
+        "hardhat-deploy",
+        "hardhat-verify",
+        "hardhat-plugin"
+    ],
+    "scripts": {
+        "publish:next": "pnpm publish --tag next",
+        "publish:release": "pnpm exec publish",
+        "prepublishOnly": "pnpm exec build"
+    },
+    "devDependencies": {
+        "hardhat": "^2.17.3",
+        "hardhat-deploy": "^0.11.37",
+        "hardhat-verify": "^1.0.0"
+    }
+}
