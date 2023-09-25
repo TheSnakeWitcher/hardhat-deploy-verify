@@ -5,6 +5,7 @@
     "author": "TheSnakeWitcher",
     "license": "MIT",
     "main": "./src/main.tsx",
+    "repository": "github:TheSnakeWitcher/hardhat-deploy-verify",
     "keywords": [
         "web3",
         "blockchain",
@@ -20,6 +21,7 @@
         "hardhat-plugin"
     ],
     "scripts": {
+        "build": "tsc",
         "publish:next": "pnpm publish --tag next",
         "publish:release": "pnpm exec publish",
         "prepublishOnly": "pnpm exec build"
