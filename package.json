@@ -5,7 +5,7 @@
     "repository": "github:TheSnakeWitcher/hardhat-deploy-verify",
     "author": "TheSnakeWitcher",
     "license": "MIT",
-    "main": "./src/main.ts",
+    "main": "./src/index.ts",
     "keywords": [
         "web3",
         "blockchain",
