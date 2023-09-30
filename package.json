@@ -27,6 +27,11 @@
         "publish:release": "pnpm run publish",
         "prepublishOnly": "pnpm run build"
     },
+    "devDependencies": {
+        "hardhat": "^2.17.4",
+        "hardhat-deploy": "^0.11.37",
+        "hardhat-verify": "^1.0.0"
+    },
     "peerDependencies": {
         "hardhat": "^2.17.4",
         "hardhat-deploy": "^0.11.37",
