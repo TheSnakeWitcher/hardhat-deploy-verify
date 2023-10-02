@@ -6,6 +6,7 @@
     "author": "TheSnakeWitcher",
     "license": "MIT",
     "main": "./src/index.ts",
+    "type": "module",
     "keywords": [
         "web3",
         "blockchain",
