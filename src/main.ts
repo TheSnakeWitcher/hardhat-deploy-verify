@@ -3,7 +3,7 @@ import * as sources_names from "hardhat/utils/source-names"
 import * as contracts_names from "hardhat/utils/contract-names"
 
 
-const TASK_VERIFY = hre.tasks.verify.name ;
+const TASK_VERIFY = "verify"  ;
 const TASK_DEPLOY = "deploy" ;
 const TASK_DEPLOY_VERIFY = `${TASK_DEPLOY}:${TASK_VERIFY}` ;
 
