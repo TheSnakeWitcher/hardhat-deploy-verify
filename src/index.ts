@@ -1,4 +1,3 @@
-import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { task, subtask } from "hardhat/config"; import * as sources_names from "hardhat/utils/source-names"
 import * as contracts_names from "hardhat/utils/contract-names"
 
@@ -11,7 +10,7 @@ const TASK_DEPLOY_GET_CONTRACT = `${TASK_DEPLOY}:get-contracts`;
 
 task(TASK_DEPLOY)
     .addFlag("verify", "automatically verify deployed contract")
-    .setAction(async function(args: any, hre: HardhatRuntimeEnvironment, runSuper: any) {
+    .setAction(async function(args: any, hre: any, runSuper: any) {
         await runSuper(args);
 
         if (args.verify) {
@@ -20,7 +19,7 @@ task(TASK_DEPLOY)
     })
 
 
-subtask(TASK_DEPLOY_VERIFY, "automatically verify a contract deployed with hardhat-deploy", async function(args: any, hre: HardhatRuntimeEnvironment) {
+subtask(TASK_DEPLOY_VERIFY, "automatically verify a contract deployed with hardhat-deploy", async function(args: any, hre: any) {
 
     const contract_name = args.tags;
     const contract_path = sources_names.localSourceNameToPath(hre.config.paths.root, contract_name);
