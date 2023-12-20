@@ -5,7 +5,8 @@
     "repository": "github:TheSnakeWitcher/hardhat-deploy-verify",
     "author": "TheSnakeWitcher",
     "license": "MIT",
-    "main": "./src/index.ts",
+    "main": "./dist/index.ts",
+    "types": "./dist/index.d.ts",
     "keywords": [
         "web3",
         "blockchain",
@@ -21,20 +22,23 @@
         "hardhat-plugin"
     ],
     "scripts": {
-        "compile": "hardhat compile",
         "build": "tsc",
         "publish:next": "pnpm publish --tag next",
         "publish:release": "pnpm run publish",
         "prepublishOnly": "pnpm run build"
     },
     "devDependencies": {
-        "hardhat": "^2.17.4",
-        "hardhat-deploy": "^0.11.37",
+        "hardhat": "^2.19.3",
+        "hardhat-deploy": "^0.11.45",
         "hardhat-verify": "^1.0.0"
     },
     "peerDependencies": {
-        "hardhat": "^2.17.4",
-        "hardhat-deploy": "^0.11.37",
+        "hardhat": "^2.19.3",
+        "hardhat-deploy": "^0.11.45",
         "hardhat-verify": "^1.0.0"
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }
