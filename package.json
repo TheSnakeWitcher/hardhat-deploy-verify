@@ -21,6 +21,10 @@
         "hardhat-verify",
         "hardhat-plugin"
     ],
+    "files": [
+        "dist/src/",
+        "src/"
+    ],
     "scripts": {
         "build": "tsc",
         "publish:next": "pnpm publish --tag next",
