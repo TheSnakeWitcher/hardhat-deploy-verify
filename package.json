@@ -25,7 +25,8 @@
         "build": "tsc",
         "publish:next": "pnpm publish --tag next",
         "publish:release": "pnpm run publish",
-        "prepublishOnly": "pnpm run build"
+        "prepublishOnly": "pnpm run build",
+        "postinstall": "pnpm run build"
     },
     "devDependencies": {
         "hardhat": "^2.19.3",
